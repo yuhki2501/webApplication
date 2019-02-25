@@ -1,0 +1,174 @@
+$mainColor:#5ab1f8;
+$buttonShadow:5px;
+$boxShadow:3px;
+
+body {
+    font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+}
+header{
+    height: 60px;
+    width: 100%;
+    position:fixed;
+    top: 0;
+    z-index: 10px;
+    // background-color: #03b4fa;
+    background-color: rgba($color: $mainColor, $alpha: 0.9);
+}
+.headerContents{
+    color:white;
+    // border: 1px solid black;
+    #headerTitle{
+        margin:8px 30px;
+        letter-spacing: 3px;
+        // border: 1px solid black;
+        float:left;
+        // display: inline;
+        // vertical-align: middle;
+        font-size: 30px;
+        text-shadow: 2px 2px 0px black;
+        cursor: pointer;
+    }
+    .headMenu{
+        list-style: none;
+        font-size: 20px;
+        float: left;
+        margin: 15px 20px;
+        cursor: pointer;
+        &:hover{
+            color:$mainColor;
+            background-color: azure;
+            transition: all 0.5s;
+        }
+    }
+    #headerLogin{
+        padding:15px 30px;
+        font-size: 20px;
+        float: right;
+        cursor: pointer;
+        background-color: rgba(255,255,255,0.3);
+        &:hover{
+            background-color: rgba(255,255,255,0.5);
+            transition: all 0.5s;
+        }
+    }
+}
+.login-modal-wrapper{
+    position:fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($color: #e6ebf0be, $alpha: 0.7);
+    z-index: 100;
+    display: none;
+    .login-modal-window{
+        position: absolute;
+        top:20%;
+        bottom:20%;
+        left: 34%;
+        right:34%;
+        background-color: $mainColor;
+        border-radius: 20px;
+        padding: 20px 0 40px;
+        text-align: center;
+        box-shadow: $boxShadow $boxShadow black;
+        .close-modal{
+            position: absolute;
+            top: 8px;
+            right: 12px;
+            cursor: pointer;
+        }
+        h2{
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 60px;
+        }
+        input{
+            // position: relative;
+            width: 80%;
+            margin-bottom: 20px;
+            padding: 5px 5px;
+        }
+    }
+}
+.description-modal-wrapper{
+    position:fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($color: #e6ebf0be, $alpha: 1);
+    z-index: 100;
+    text-align: center;
+    display: none;
+    .close-modal{
+        position: absolute;
+        top: 8px;
+        right: 12px;
+        cursor: pointer;
+    }
+    h3{
+        font-size: 80%;
+        margin-top: 0 20px;
+        padding: 0;
+    }
+    h4{
+        font-size: 60%;
+        margin: 0;
+        padding: 0;
+    }
+}
+.main{
+    height: 1200px;
+    text-align: center;
+    border: 1px dotted black;
+    // #topContents{
+    //     // width: 30%;
+    //     // max-width: 50%;
+    //     // margin: 0 auto;
+    //     // margin-top:40px;
+    //     height: 900px;
+    //     background-image:url(../picture/nekopicture2.jpg); 
+    //     background-size: cover;
+    //     max-width: 100%;
+    //     background-color: #eee8aa;
+    //     margin: 0 auto;
+    // }
+    p{
+        font-size: 30px;
+        letter-spacing: 10px;
+        margin-top: 250px;
+    }
+}
+.btnCommon{
+    padding: 10px 20px;
+    border: none;
+    background-color: #5dca88;
+    margin: 10px 20px;
+    box-shadow: $boxShadow $boxShadow black;
+    cursor: pointer;
+    border-radius: 3px;
+    color: white;
+    &:hover{
+        background-color: #51b97b;
+    }
+    &:active{
+        position: relative;
+        box-shadow: none;
+        top:$boxShadow;
+        left:$boxShadow;
+    }
+}
+footer{
+    height: 100%;
+    width: 100%;
+    border: 1px dotted black;
+    p{
+        // margin: 0 auto;
+        text-align: center;
+    }
+    &:hover{
+        background-color: $mainColor;
+        transition: all 0.5s;
+    }
+}

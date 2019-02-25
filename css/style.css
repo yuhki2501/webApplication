@@ -1,0 +1,133 @@
+body {
+  font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif; }
+
+header {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10px;
+  background-color: rgba(90, 177, 248, 0.9); }
+
+.headerContents {
+  color: white; }
+  .headerContents #headerTitle {
+    margin: 8px 30px;
+    letter-spacing: 3px;
+    float: left;
+    font-size: 30px;
+    text-shadow: 2px 2px 0px black;
+    cursor: pointer; }
+  .headerContents .headMenu {
+    list-style: none;
+    font-size: 20px;
+    float: left;
+    margin: 15px 20px;
+    cursor: pointer; }
+    .headerContents .headMenu:hover {
+      color: #5ab1f8;
+      background-color: azure;
+      transition: all 0.5s; }
+  .headerContents #headerLogin {
+    padding: 15px 30px;
+    font-size: 20px;
+    float: right;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3); }
+    .headerContents #headerLogin:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      transition: all 0.5s; }
+
+.login-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(230, 235, 240, 0.7);
+  z-index: 100;
+  display: none; }
+  .login-modal-wrapper .login-modal-window {
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
+    left: 34%;
+    right: 34%;
+    background-color: #5ab1f8;
+    border-radius: 20px;
+    padding: 20px 0 40px;
+    text-align: center;
+    box-shadow: 3px 3px black; }
+    .login-modal-wrapper .login-modal-window .close-modal {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      cursor: pointer; }
+    .login-modal-wrapper .login-modal-window h2 {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 60px; }
+    .login-modal-wrapper .login-modal-window input {
+      width: 80%;
+      margin-bottom: 20px;
+      padding: 5px 5px; }
+
+.description-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #e6ebf0;
+  z-index: 100;
+  text-align: center;
+  display: none; }
+  .description-modal-wrapper .close-modal {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    cursor: pointer; }
+  .description-modal-wrapper h3 {
+    font-size: 80%;
+    margin-top: 0 20px;
+    padding: 0; }
+  .description-modal-wrapper h4 {
+    font-size: 60%;
+    margin: 0;
+    padding: 0; }
+
+.main {
+  height: 1200px;
+  text-align: center;
+  border: 1px dotted black; }
+  .main p {
+    font-size: 30px;
+    letter-spacing: 10px;
+    margin-top: 250px; }
+
+.btnCommon {
+  padding: 10px 20px;
+  border: none;
+  background-color: #5dca88;
+  margin: 10px 20px;
+  box-shadow: 3px 3px black;
+  cursor: pointer;
+  border-radius: 3px;
+  color: white; }
+  .btnCommon:hover {
+    background-color: #51b97b; }
+  .btnCommon:active {
+    position: relative;
+    box-shadow: none;
+    top: 3px;
+    left: 3px; }
+
+footer {
+  height: 100%;
+  width: 100%;
+  border: 1px dotted black; }
+  footer p {
+    text-align: center; }
+  footer:hover {
+    background-color: #5ab1f8;
+    transition: all 0.5s; }
